@@ -21,75 +21,92 @@
       rel="stylesheet"
     />
 
-    <title>Devchallenges</title>
+    <title>404 File Not Found :(</title>
 
     <style>
-      body {
-        font-family: "Poppins", sans-serif;
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .home{
+        height: 100vh;
+      }
+      .main{
+       /* width: 100vw;*/
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin:10px 0;
+/*        background-color: red;*/
+      }
+      .img img{
+        width: 75%;
+        height: 70%;
+      }
+      .content{
+
+      }
+      .content h1{
+        font-size: 64px;
+        line-height: 1.2;
+      }
+      .content p{
+        font-size: 20px;
+        line-height: 1.5;
+        margin-top: 20px;
+      }
+      .content button{
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        padding: 10px;
       }
 
-      ul {
-        padding-left: 24px;
-      }
 
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
+      @media screen and (max-width: 720px){
+        
+        .corner{
+          font-size: 16px;
+        }.main{
+          display: block;
+          margin: 5% 0;
+          padding: 20px;
+        }
+        br{
+          display: none;
+        }
+        .img img{
+          height: 40%;
+          width: 60%;
+        }
+        .content h1{
+          font-size: 42px;
+        }
+        .content p{
+          font-size: 16px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div class="home">
+      <div class="corner">
+        <h2>404 NOT FOUND</h2>
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+    <div class="main">
+        <div class="img">
+            <img src="Scarecrow.png">
+        </div>
+        <div class="content">
+            <h1>I have bad news <br> for you</h1>
+            <p>The page you are looking for might be removed or is temporarily unavailable</p>
+            <button>BACK TO HOMEPAGE</button>
+        </div>
     </div>
+    </div>
+
   </body>
 </html>
